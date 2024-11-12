@@ -1,0 +1,41 @@
+<nz-layout class="layout">
+
+  <nz-sider>
+    <div class="logo">
+      <img src="../assets/muscle.png" class="avatar" alt="Avatar" />
+      <div class="user-info">
+          <strong>Fitness Tracker</strong>
+      </div>
+  </div>
+  
+
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item routerLink="/dashboard">
+        
+        <span> <img src="../assets/dashboardd.png" height="27px"> DashBoard</span>
+      </li>
+      <li nz-menu-item routerLink="/workout">
+        
+        <span><img src="../assets/fitness.png" height="27px"> WorkOut</span>
+      </li>
+      <li nz-menu-item routerLink="/activity">
+        
+        <span><img src="../assets/running.png" height="27px">Activity</span>
+      </li>
+      <li nz-menu-item routerLink="/goal">
+        
+        <span><img src="../assets/exercise-routine.png" height="27px">Goal</span>
+      </li>
+    </ul>
+
+  </nz-sider>
+
+  <nz-layout class="right-layout">
+       <nz-content>
+        <div class="inner-content">
+          <router-outlet></router-outlet>
+        </div>
+       </nz-content>
+  </nz-layout>
+
+</nz-layout>
